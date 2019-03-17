@@ -28,4 +28,19 @@ export class RestroService {
    return this.httpclient.post(url,body,options)
    
   }
+  public login(data:any)
+  {
+    alert('postResaturentMenu')
+    const body = JSON.stringify(data);
+    let options = {
+      headers: this.headers
+     }; 
+   const url='http://192.168.2.122:5000/login/'
+   return this.httpclient.post(url,body,options)
+
+  }
+  public loggedIn()
+  {
+    return !!localStorage.getItem('token')
+  }
 }
