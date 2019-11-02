@@ -13,37 +13,24 @@ export class PostrestaurentmentComponent implements OnInit {
   }
 
  public postdata(data :any)
-  {  alert("hi")
-     this.restro.postResaturentMenu(data).subscribe(res=>{
+   {  //alert("hi")
+  //    this.restro.postResaturentMenu(data).subscribe(res=>{
 
-      console.log(res)
+  //     console.log(res)
    
 
-     },error=>{
+  //    },error=>{
 
-      alert(error)
-      console.log(error)
-     })
+  //     alert(error)
+  //     console.log(error)
+  //    })
+  this.restro.postResaturentMenu(data).subscribe(response=>{
 
+    console.log(response)
+  })
   }
 
-  public login(data:any)
-  {
-    this.restro.login(data).subscribe(res=>{
-      
-            console.log(res)
-            /* 
-            localstorage.setItem('token',res.token)
-            
-            */
-      
-           },error=>{
-      
-            alert(error)
-            console.log(error)
-           })
-
-  }
+  
  
 
 }
