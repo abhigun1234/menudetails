@@ -6,7 +6,7 @@ import { PostrestaurentmentComponent } from './postrestaurentment/postrestaurent
 import {HttpClientModule,HTTP_INTERCEPTORS} from '@angular/common/http'
 
 import {RouterModule} from '@angular/router'
-
+ 
 import {RestrohomeComponent} from './restrohome/restrohome.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
