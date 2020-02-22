@@ -18,8 +18,9 @@ export class RestroService {
       let options = {
         headers: this.headers
       }; 
-    const url='http://192.168.1.5:5000/addmenu/'
+    const url='http://192.168.1.19:5000/addmenu/'
     //http://192.168.1.6:5000/getMenuDetails/
+    //https://github.com/abhigun1234/menudetails.git
    
     return this.httpclient.post(url,body,options)
    
